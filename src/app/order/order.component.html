@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="assets/images/Capture.PNG" alt="Office Cafeteria" class="navbar-logo" />
+        </a>
+        <ul class="navbar-menu">
+            <li><a routerLink = '/home' routerLinkActive="active">HOME</a></li>
+            
+            <li><a routerLink = '/about' routerLinkActive="active">ABOUT</a></li>
+            <li><a routerLink = '/register' routerLinkActive="active">SIGN OUT</a></li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <div class="container">
+       
+        
+
+        <div class="form-container">
+            <div class="form-box">
+                
+                <form >
+                    <p id="text1">Order Now</p>
+                  
+                   
+                    <input type="date" id="userName" name="username" placeholder="Date">
+                    
+                    <br>
+  <select class="box">
+    <option value="BreakFast">BreakFast</option>
+    <option value="Lunch">Lunch</option>
+    <option value="Dinner">Dinner</option>
+    
+  </select >
+  <br><br>
+  <select class="box">
+    <option value="Veg">Veg</option>
+    <option value="NonVeg">NonVeg</option>
+  
+    
+  </select>
+  <br><br>
+                    <button type="submit" (click)="sucess()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <img  style="margin-top: 20px; margin-left: 47%;" src="assets/images/Capture.PNG" alt="Office Cafeteria" class="navbar-logo">
+      <h5 style="text-align: center;">© 2023 Kongsberg Digital</h5>
+    </footer>
+</body>
+</html>
+

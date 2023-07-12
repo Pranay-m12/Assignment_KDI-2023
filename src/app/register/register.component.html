@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Cafeteria</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="assets/images/Capture.PNG" alt="Office Cafeteria" class="navbar-logo" />
+        </a>
+        <ul class="navbar-menu">
+            <li><a routerLink = '/register' routerLinkActive="active">HOME</a></li>
+            <li><a routerLink = '/login' routerLinkActive="active">LOGIN</a></li>
+            <li><a routerLink = '/about' routerLinkActive="active">ABOUT</a></li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to the Office Cafeteria</h1>
+        
+        <img src="assets/images/impo.PNG" alt="Cafeteria" style="max-width: 100%;"><br><br><br><br>
+
+        <div class="form-container">
+            <div class="form-box">
+                <form >
+                    <p id="text1">Register</p>
+                    <input type="text"  id="firstname" name="firstname" placeholder="First Name">
+                  
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                  
+                    <input type="email" id="email" name="email" placeholder="Email">
+                   
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    
+                    
+                    
+                    <input type="tel" name="tel" id="tel" placeholder="Mobile Number">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <ul class="helper-text">
+                        <li class="length">Must be at least 8 characters long.</li>
+                        <li class="lowercase">Must contain a lowercase letter.</li>
+                        <li class="uppercase">Must contain an uppercase letter.</li>
+                        <li class="special">Must contain a number or special character.</li>
+                    </ul>
+                    <p id="askforlogin">Already Registred @ then, <a  routerLink = '/login'>Login</a></p>
+                    <button type="submit" (click)="store()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <img  style="margin-top: 20px; margin-left: 47%;" src="assets/images/Capture.PNG" alt="Office Cafeteria" class="navbar-logo">
+      <h5 style="text-align: center;">© 2023 Kongsberg Digital</h5>
+    </footer>
+</body>
+</html>
+

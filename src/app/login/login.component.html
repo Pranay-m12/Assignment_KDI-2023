@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="assets/images/Capture.PNG" alt="Office Cafeteria" class="navbar-logo" />
+        </a>
+        <ul class="navbar-menu">
+            <li><a routerLink = '/register' routerLinkActive="active">HOME</a></li>
+            
+            <li><a routerLink = '/about' routerLinkActive="active">ABOUT</a></li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <div class="container">
+       
+        
+
+        <div class="form-container">
+            <div class="form-box">
+                
+                <form >
+                    <p id="text1">Login</p>
+                  
+                   
+                    <input type="text" id="userName" name="username" placeholder="Username">
+                    
+                    <input type="password" id="Password" name="password" placeholder="Password">
+                    
+                    
+                    <p id="askforlogin">Not Registred @ then, <a routerLink = '/register'>Register</a></p>
+                    <button type="submit" (click)="onsubmit()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <img  style="margin-top: 20px; margin-left: 47%;" src="assets/images/Capture.PNG" alt="Office Cafeteria" class="navbar-logo">
+      <h5 style="text-align: center;">© 2023 Kongsberg Digital</h5>
+    </footer>
+</body>
+</html>
+
